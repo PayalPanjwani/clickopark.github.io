@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ClickoPark</title>
+		<link rel="icon" type="icon" href="images/logo.png">
+		<link rel="stylesheet" type="text/css" href="index_styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+
+	<body>
+		<div ng-app="clickopark" ng-controller="logincontroller"></div>
+		<header>
+			<img src="images/logo.png" alt="logo">
+
+			<ul>
+				<li class="active"><a href="">HOME</a></li>
+				<li class="inactive"><a href="howItWorks.html">HOW IT WORKS</a></li>
+				<li class="inactive"><a href="#">DOWNLOAD APP</a></li>
+				<li class="inactive"><a href="#">CONTACT</a></li>
+				<li class="inactive"><a ng-click="signin()">SIGN IN</a></li>
+			</ul>
+		
+		</header>
+
+		<div class="heading">
+			<h1>ClickoPark</h1>
+			<h3>Find Your Parkings- AnyTime AnyWhere</h3>
+		</div>
+
+		<!--
+		<div class="login" ng-show="loggedin">
+			<form>
+				<div class="form-group">
+					<label>USERNAME</label>
+					<input ng-model="username" type="text" class="form-control" placeholder="User Name">
+				</div>
+				<div class="form-group">
+					<label>PASSWORD</label>
+					<input ng-model="password" type="password" class="form-control" placeholder="Password">
+				</div>
+				<div class="form-group">
+					<button ng-click=login()>LOGIN</button>
+					<button ng-click=signup()>SIGNUP</button>
+				</div>
+				<p>{{message}}</p>
+			</form>
+		</div>
+		-->
+
+		<div class="about" ng-hide="loggedin">
+			<p>
+				ClickoPark provides you with all the information to free as well as paid parking. 
+				Whether you are driving a car or a bike, the ClickoPark app is ready to assist you 
+				by providing you a list of all the parking spots nearby. 
+				Not only this, the ever growing demand for cars & bikes needs increasingly more space 
+				to park them and we at ClickoPark are constantly updating all the parking spots 
+				to make things easier and hassle free.
+			</p>
+			<br>
+			<p>
+				Driving your vehicle becomes much easier when you have less things to worry about. Isn’t it?
+			</p>
+			In short ClickoPark is the solution to all your parking problems.
+		</div>
+
+		<div class="numbers">
+			<img src="images/numbers.png" height="200px" width="1000px">
+		</div>
+
+		<div class="tagline">
+			Find a spot, book and park !!
+		</div>
+
+		<div class="download">
+			<p style="padding-top: 30px;">
+				&emsp;Download our app
+			</p>
+			<table cellspacing="20">
+				<tr>
+					<td>
+						<img src="images/apple.png" height="60px" width="180px" alt="download on app store">
+					</td>
+
+					<td>
+						<img src="images/android.png" height="80px" width="200px" alt="get it on google play">
+					</td>
+
+					<td>
+						<img src="images/book.png" height="240px" width="260px" alt="book on phone image">
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<footer>
+			<table>
+				<tr>
+					<td>
+						<img class="footer_logo" src="images/logo.png" alt="logo">
+					</td>
+
+					<td style="width: 40%; padding-right: 50px; vertical-align: top;">
+						<p class="footer_headings">About Us</p>
+						<p>
+							ClickoPark provides you with all the information to free as well as paid parking. 
+							Whether you are driving a car or a bike, the ClickoPark app is ready to assist you 
+							by providing you a list of all the parking spots nearby.
+						</p>
+						<table>
+							<tr>
+								<td><img class="facebook" src="images/facebook.png" alt="facebook"></td>
+								<td><img class="instagram" src="images/instagram.png" alt="instagram"></td>
+								<td><img class="twitter" src="images/twitter.png" alt="twitter"></td>
+							</tr>
+						</table>
+					</td>
+
+					<td style="width: 15%; padding-right: 30px; vertical-align: top;">
+						<p class="footer_headings">Quick Links</p>
+						<ul style="list-style: none; ">
+							<li>Home</li>
+							<li>How It Works</li>
+							<li>Learn More</li>
+						</ul>
+					</td>
+
+					<td style="width: 20%; padding-right: 30px; vertical-align: top;">
+						<p class="footer_headings">&nbsp;Contact Us</p>
+						<table>
+							<tr>
+								<td><img class="location" src="images/location.png" alt="location"></td>
+								<td>Vaishnodevi Circle, Ahmedabad, Gujarat, India</td>
+							</tr>
+							<tr>
+								<td><img class="phone" src="images/phone.png" alt="phone"></td>
+								<td>+91 9376XXXX72</td>
+							</tr>
+							<tr>
+								<td><img class="mail" src="images/mail.png" alt="mail"></td>
+								<td>&nbsp;askus@clickopark.co.in</td>
+							</tr>
+						</table>
+					</td>
+
+					<td style="width: 20%; padding-right: 30px; vertical-align: top;">
+						<p class="footer_headings">Others</p>
+						<ul style="list-style: none;">
+							<li>Terms and Conditions</li>
+							<li>Privacy Policy</li>
+							<li>FAQs</li>
+							<li>Collaborate with us</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</footer>
+	</div>
+	</body>
+</html>

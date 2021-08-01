@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("images/index_image.png");
+    background-repeat: no-repeat;
+    background-size: 520px 480px;
+    background-position-x: 900px;
+    background-position-y: 200px;
+}
+
+header{
+    background-color: rgb(157, 158, 160, 0.8);
+    padding: 0.3% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img{
+    cursor: pointer;
+    width: 6%;
+    height: 3%;
+}
+
+header ul{
+    list-style-type: none;
+    font-size: 18px;
+    background-color: rgb(157, 158, 160, 0.08);
+}
+
+header li{
+    display: inline-block;
+    padding: 0px 20px;
+    cursor: pointer;
+    line-height: 300%;
+}
+
+header a{
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+header .inactive:hover{
+    background-color: rgb(252, 161, 3, 0.4);
+}
+
+header .inactive:hover a{
+    font-weight: bold;
+}
+
+.active{
+    font-weight: bold;
+    color: black;
+    background-color: rgb(252, 161, 3);
+}
+
+.heading h1{
+    padding-top: 40px;
+    padding-bottom: 15px;
+    font-weight: 510;
+    text-align: center;
+    font-size: 280%; 
+    color: black;
+    text-shadow: 2px 2px 1px rgb(252, 161, 3);
+}
+
+.heading h3{
+    padding-bottom: 10px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 160%; 
+    color: black; 
+    text-shadow: 2px 2px 1px rgb(252, 161, 3);
+}
+
+.login{
+    width: fit-content;
+    height: 70%;
+    margin-top: 50px;
+    margin-left: 500px;
+    word-spacing: 2px; 
+    line-height: 30px;
+    font-size: 20px; 
+    border: black 1px solid;
+    box-shadow: 6px 6px 10px rgb(0,0,0,0.7);
+    padding: 30px;
+}
+
+.form-group{
+    padding: 10px 0;
+    padding: 10px;
+}
+
+.form-control{
+    font-size: 18px;
+    width: 200px;
+    padding: 5px;
+}
+
+.form-group button{
+    padding: 10px;
+    font-size: 15px;
+    margin-left: 55px;
+}
+
+.about{
+    font-family: Arial; 
+    width: 75%; 
+    font-size: 20px; 
+    padding: 70px; 
+    padding-left: 60px; 
+    word-spacing: 2px; 
+    line-height: 30px;
+}
+
+.numbers{
+    padding-top: 20px;
+    padding-left: 230px;
+}
+
+.tagline{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    color: rgb(11, 48, 158);
+    text-shadow: 2px 2px 1px rgb(252, 161, 3);
+}
+
+.download{
+    color: cornsilk;
+    background-color: rgb(7, 7, 85, 0.9);
+    border-radius: 20px;
+    font-size: 38px;
+    margin-top: 80px;
+    margin-left: 270px;
+    margin-right: 270px;
+    padding-top: 12px;
+    padding-left: 40px;
+    margin-bottom: 80px;
+}
+
+footer{
+    background: rgb(157, 158, 160, 0.8);
+    font-size: 105%;
+    position: absolute;
+    padding: 30px 5px;
+}
+
+.footer_logo{
+    height: 100px;
+    width: 150px;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.footer_headings{
+    font-family: Garamond serif;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.facebook{
+    height: 48px;
+    width: 55px;
+    padding-top: 10px;
+}
+
+.instagram{
+    height: 52px;
+    width: 40px;
+    padding-top: 10px;
+}
+
+.twitter{
+    height: 50px;
+    width: 48px;
+    padding-top: 10px;
+    padding-left: 7px;
+}
+
+.location{
+    height: 26px;
+    width: 32px;
+}
+
+.phone{
+    height: 28px;
+    width: 32px;
+}
+
+.mail{
+    height: 24px;
+    width: 26px;
+}
